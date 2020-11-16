@@ -14,13 +14,13 @@ async function selectMediaStream() {
     }
 }
 
-button.addEventListener('click', async () => {
+buttonElement.addEventListener('click', async () => {
     /*disable button*/
-    button.disabled = true;
+    buttonElement.disabled = true;
     /*start picture-in-picture*/
     await videoElement.requestPictureInPicture();
     /*reset button*/
-    button.disabled = false;
+    buttonElement.disabled = false;
 });
 /*on load*/
 selectMediaStream();
